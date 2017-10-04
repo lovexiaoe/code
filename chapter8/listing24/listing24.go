@@ -1,5 +1,7 @@
 // This sample program demonstrates how to decode a JSON response
 // using the json package and NewDecoder function.
+//字段后面的json 标记用于json数据和struct之间的匹配，如果没有这些标记，默认会按照
+//名字（不区分大小写）匹配，如果没有找到匹配，则会默认用0值。
 package main
 
 import (
